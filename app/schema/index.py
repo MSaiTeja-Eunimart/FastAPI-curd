@@ -1,0 +1,1 @@
+from app.schema.student import Student
