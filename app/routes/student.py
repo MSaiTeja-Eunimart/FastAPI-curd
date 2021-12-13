@@ -6,7 +6,6 @@ from app.models.index import students
 from app.schema.index import Student
 from app.services.student import Student_service
 
-
 route = APIRouter(
     prefix='/student',
     tags=['Student']

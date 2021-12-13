@@ -1,8 +1,15 @@
 from app.models.index import students
 from app.schema.index import Student
 from app.config.db import conn
+from datetime import datetime
 
 class Student_service():
+    def root():
+        now = datetime.now()
+        now = str(now)
+        print(now[:-7])
+
+        
     def list_student_service():
         return conn.execute(students.select()).fetchall()
 
